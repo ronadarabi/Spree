@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles/add-event.css">
+    <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link href="https://fonts.googleapis.com/css2?family=Erica+One&family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -17,38 +17,46 @@
         <img src="icons/logo.svg" class="logo">
         <div class="title">Spree</div>
 
-        <!--Event info inputs-->
-        <label class="label org-label">Organization</label>
-        <input id="org-input" class="text-input org-input" type="text">
+        <div class="content">
+            <div class="left-section">
 
-        <label class="label name-label">Event Name</label>
-        <input id="name-input" class="text-input name-input" type="text">
+                <!-- Profile picture -->
+                <label class="profile-pic-container">
+                    <img id="profile-pic" src="icons/profile-pic-hold.svg" class="profile-pic">
+                    <input type="file" id="profile-upload" accept="image/png, image/jpeg">
+                </label>
 
-        <label class="label desc-label">Event Description</label>
-        <textarea id="desc-input" class="text-input desc-input" rows="2"></textarea>
-
-        <label class="label datetime-label">Date & Time</label>
-        <input id="date-input" class="text-input date-input" type="date">
-        <input id="time-input" class="text-input time-input" type="time">
-
-        <label class="label loc-label">Location</label>
-        <input id="loc-input" class="text-input loc-input" type="text">
-
-        <div class="upload-img-container">
-            <div class="upload-img-btn"> 
-                <span class="upload-img">Upload Image</span>
-                <img src="icons/plus.svg" class="plus-icon">
+                <!-- Profile information -->
+                <div class ="profile-info">
+                    <div class="input-row">
+                        <label class="label name-label">Name</label>
+                        <input id="name-input" class="text-input name-input" type="text">
+                    </div>
+                    <div class="input-row">
+                        <label class="label email-label">Email</label>
+                        <input id="email-input" class="text-input email-input" type="text">
+                    </div>
+                </div>
             </div>
-            <input type="file" id="file-input" style="display:none;" accept="image/png, image/jpeg">
-            <span class="upload-file-name"></span>
-            <img src="icons/x.svg" class="remove-file-btn" style="display:none; cursor:pointer; vertical-align: middle;">
+
+            <!-- Preferences -->
+            <div class="right-section">
+                <label class="prefs-title">Preferences</label>
+
+                <div id="prefs-box" class="prefs-box"></div>
+
+                <div id="available-prefs" class="available-prefs">
+
+                </div>
+            </div>
         </div>
 
-        <!--Logo-->
-        <img src="icons/bottom-right.svg" class="bottom-right">
 
-        <!--Submit event-->
-        <button id="post-event-btn" class="post-event-btn">Post Event</button>
+        <!--Logo-->
+        <img src="icons/bottom-left.svg" class="bottom-left">
+
+        <!--Save changes-->
+        <button id="save-changes-btn" class="save-changes-btn">Save Changes</button>
 
     </div>
 
@@ -82,6 +90,6 @@
     </div>
 
 
-<script src="script/add-event.js"></script>
+<script src="script/profile.js"></script>
 </body>
 </html>

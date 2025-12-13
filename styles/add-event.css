@@ -8,15 +8,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background: #ddd; /* helps visualize */
-}
-
-.frame {
-    position: relative;
-    width: 1280px;
-    height: 832px;
-    background: #fff;
-    overflow: hidden;
 }
 
 /* Card */
@@ -25,7 +16,7 @@ body {
     position: absolute;
     width: 799.16px;
     height: 441.35px;
-    left: 444px;
+    right: 58.84px;
     top: 29px;
     background: #F7F7F7;
     border: 2px solid #FBE4FC;
