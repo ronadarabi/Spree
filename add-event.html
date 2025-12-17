@@ -7,8 +7,6 @@
 </head>
 
 <body>
-
-
     <div class="card" id="card">
         <!--Exit button-->
         <img src="icons/exit-button.svg" id="exit-btn" class="exit-btn">
@@ -53,8 +51,8 @@
     </div>
 
     <!--Sidebar-->
-    <div class="sidebar">
-        <img src="icons/logo.svg">
+    <div class="sidebar" id="sidebar">
+        <img src="icons/logo.svg" id="sidebar-logo">
         <svg class="side-icon" id="sidebar-profile" width="28" height="28" viewBox="0 0 28 28" fill="none">
             <path d="M23.3332 24.5V22.1667C23.3332 20.929 22.8415 19.742 21.9663 18.8668C21.0912 17.9917 19.9042 17.5 18.6665 17.5H9.33317C8.09549 17.5 6.90851 17.9917 6.03334 18.8668C5.15817 19.742 4.6665 20.929 4.6665 22.1667V24.5M18.6665 8.16667C18.6665 10.744 16.5772 12.8333 13.9998 12.8333C11.4225 12.8333 9.33317 10.744 9.33317 8.16667C9.33317 5.58934 11.4225 3.5 13.9998 3.5C16.5772 3.5 18.6665 5.58934 18.6665 8.16667Z"
                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
@@ -81,7 +79,12 @@
         </svg>
     </div>
 
+    <div class="sidebar-hidden" id="sidebar-hidden" style="display:none;">
+        <img src="icons/sidebar-hidden.svg" id="show-sidebar" style="cursor:pointer;">
+    </div>
 
-<script src="script/add-event.js"></script>
+
+
+<script type="module" src="script/add-event.js"></script>
 </body>
 </html>
