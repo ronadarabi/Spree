@@ -1,7 +1,7 @@
 # Spree
 
 ## Overview
-Spree is a Chrome extension that allows you to find on campus events, directly catered to your schedule and interests. The pages we have chosen to implement are the Profile page and Add Events page, showing how the extension could work from two different perspectives. This project uses Firebase Firestore for storing event data. The firebase configuration is included in `firebase.js` and is already set up.
+Spree is a Chrome extension that allows you to find on campus events, directly catered to your schedule and interests. The pages we have chosen to implement are the Profile page and Add Events page, showing how the extension could work from two different perspectives. A user, or someone looking for events, can upload personal information and customize the types of events they'd like to see by selecting preferences. An organization may post events with crucial information such as the date, time, location, description, and more. This project uses Firebase Firestore for storing event data. The firebase configuration is included in `firebase.js` and is already set up.
 
 
 #### Some notes about the pages: 
